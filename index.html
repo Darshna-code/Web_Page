@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Snap Up shopping website</title>
+    <link rel="stylesheet" href="style.css">
+<!--for fonts-->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" >
+
+<!--for font awesome 4 cdn and icon-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+<div class="header"> 
+<div class="container">
+  <div class="navbar">
+        <div class="logo">
+            <img src="images/snap%20up-logos_black.png"  width="200px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+               <li><a href="">Home</a></li>
+               <li><a href="">Products</a></li>
+               <li><a href="">about</a></li>
+               <li><a href="">contact</a></li>
+               <li><a href="">account</a></li>
+            </ul>
+        </nav>
+        <img src="images/cart6.jfif" id="cartimg" alt="" width="70px" height="70px">
+        <img src="images/menu%20icon.png" class="menu-icon" onclick="menutoggle()">
+ </div>
+    <div class="row">
+        <div class="col2">
+            <h1>Stay Home and Shop Online,<br> Treat Your Self !</h1>
+            <p>"Success isn't always about greatness. It's about consistency. Consistent<br> hard work leads to success. Greatness will come." </p>
+            <a href="" class="btn">Explore Now &#10142</a>
+        </div>
+        
+        <div class="col2">
+            <img src="images/home%20img.jpg">   
+        </div>
+    </div>
+</div> 
+</div>
+    
+<!----------featured categories--------->
+    
+<div class="categories">
+    <div class="small-container">
+    <h2 class="title">featured categories</h2>
+    <div class="row">
+        <div class="col3">
+            <img src="images/category1.jfif"  alt="">
+            <h3 class="h3">T-shirts for men</h3>
+        </div>
+        <div class="col3">
+            <img src="images/category2.jfif"  alt="">
+             <h3 class="h3">watches</h3>
+        </div>
+        <div class="col3">
+            <img src="images/category3.jfif"  alt="">
+             <h3 class="h3">footwares</h3>
+        </div>
+    </div>
+    </div>
+</div>
+    
+<!-----------featured products---------->
+    
+    <div class="small-container">
+        <h2 class="title">featured products</h2>
+        <div class="row">
+            <div class="col4">
+                <img src="images/T-shirt%205.png" alt="">
+                <h4>checks T-shirt</h4>
+                    <div class="rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>    <!--or instead of span use i, and fa for icon in css-->
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col4">
+                <img src="images/watch%205.png" alt="">
+                <h4>fancy watch</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span class="fa fa-star"></span>    <!--or instead of i use span-->
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                <p>$60.00</p>
+            </div>
+            <div class="col4">
+                <img src="images/shoe%202.png" alt="">
+                <h4>pink shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>    <!--or instead of i use span-->
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                <p>$70.00</p>
+            </div>
+            <div class="col4">
+                <img src="images/pullover4.png" alt="">
+                <h4>pink pullover for girls</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                <p>$80.00</p>
+            </div>
+        </div>
+        
+        <h2 class="title">latest product</h2>
+        <div class="row">
+            <div class="col4">
+                <img src="images/T-shirt%201.jfif" alt="">
+                <h4>checks T-shirt</h4>
+                    <div class="rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>    <!--or instead of span use i, and fa for icon in css-->
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col4">
+                <img src="images/T-shirt%202.jfif" height="220" alt="">
+                <h4>fancy watch</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span class="fa fa-star"></span>    <!--or instead of i use span-->
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                <p>$60.00</p>
+            </div>
+            <div class="col4">
+                <img src="images/shoe%2011.jfif" alt="">
+                <h4>pink shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>    <!--or instead of i use span-->
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                <p>$70.00</p>
+            </div>
+            <div class="col4">
+                <img src="images/watch%203.jfif" alt="">
+                <h4>pink pullover for girls</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                <p>$80.00</p>
+            </div>
+        </div>
+    </div>
+    
+<!--------------offers--------------->
+    
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col2">
+                <img src="images/watch%201.jfif" class="offer-img">
+            </div>
+            <div class="col2">
+                <p>Exclusively available on Snap Up!</p>
+                <h1>Smart Band</h1>
+                <small>The Mi Band features are larger, color , <br>full-touch display with adjustable brightness, so everything clear as can be. </small>
+                <a href="" class="btn">Buy Now &#10142</a>
+          </div>
+        </div>
+        </div>
+    </div>
+    
+<!-------testimonial------->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col3">
+                        <i class="fa fa-quote-left"></i>
+                    <p>“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user%204.jfif">
+                    <h3>Aditya Seal</h3>
+                </div>
+                
+                   <div class="col3">
+                        <i class="fa fa-quote-left"></i>
+                    <p>“Wow. I just updated my site and it was SO SIMPLE. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives!”</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user%205.jpg">
+                    <h3>Kartik Aryan</h3>
+                </div>
+                
+                
+                   <div class="col3">
+                        <i class="fa fa-quote-left"></i>
+                    <p>i really like this product and i  used it for long time so, it's a pritty good smart watch to buy and also worth it.<br>Thanks, guys!”</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user%203.jfif" >
+                    <h3>meezaan jaffrey</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-------------brands------------>
+    
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col5">
+                <img src="images/godrej.jfif">
+            </div>
+             <div class="col5">
+                <img src="images/oppo.png">
+            </div>
+             <div class="col5">
+                <img src="images/bata.png">
+            </div>
+             <div class="col5">
+                <img src="images/fastrack.jfif">
+            </div>
+             <div class="col5">
+                <img src="images/titan.png">
+            </div>
+        </div>
+    </div>
+    </div>  
+    
+<!-----------------footer--------------->
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download Your App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    
+                    
+                </div>
+                
+                <div class="footer-col2">
+                    <img src="images/app%20logo%20transparent.png" height="250px" width="300px">
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/app%20store.png">
+                        <img src="images/play%20store.png">
+                    </div>
+                </div>
+                
+                <div class="footer-col3">
+                <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                    </ul>
+                </div>
+                
+                   <div class="footer-col4">
+                <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Darshna Sharma</p>
+        </div>
+    </div>
+    
+<!--------------------js for toggle menu-------------------->
+        
+    <script>
+    var Menuitems = document.getElementById("Menuitems")
+    
+    Menuitems.style.maxHeight= "0px";
+        
+        function menutoggle(){
+          if(Menuitems.style.maxHeight == "0px")  {
+              Menuitems.style.maxHeight= "200px";
+          }
+          else  
+              {
+                  Menuitems.style.maxHeight= "0px";
+              }
+        }
+    </script>
+
+</body>
+</html>
